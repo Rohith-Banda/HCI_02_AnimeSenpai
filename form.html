@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Style the label */
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Style the file input field */
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add some hover effect to the submit button */
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+    </style>
+
+</head>
+<body>
+    <header class="bg-danger text-white text-center py-3" >
+        <h1 >Emergency</h1>
+        <p>keeping fake reports is crime undrer section 192</p>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="home" class="mb-5">
+            <h2 class="text-center">Accident</h2>
+        </section>
+
+        <section id="book" class="mb-5">
+            <h2 class="text-center">Patient Register Form</h2>
+            <form id="appointment-form" class="mx-auto" style="max-width: 600px;">
+                <div class="form-group">
+                    <label for="name">Applicant Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">OTP:</label>
+                    <input type="tel" class="form-control" id="OTP" name="OTP" required>
+                </div>
+                <label>Realtion to the patient</label>
+                <label for="male">
+                    <input type="radio" name="Gender" value="Parent" id="male">Parents
+                    </label>
+                    <label for="Female">
+                    <input type="radio" name="Gender" value="Guardians" id="Female">Guardians
+                </label>
+                <label for="Female">
+                    <input type="radio" name="Gender" value="Guardians" id="Female">Others
+                </label>
+
+                <div class="form-group">
+                    <label for="name">Patient Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div style="padding: 10px;">
+                    <label>Gender</label>
+                <label for="male">
+                    <input type="radio" name="Gender" value="male" id="male">Male
+                    </label>
+                    <label for="Female">
+                    <input type="radio" name="Gender" value="Female" id="Female">Female
+                </label>
+                </div>
+                <label for="fileInput">Upload an fees reciept:</label>
+                <input type="file" id="fileInput" name="fileInput" accept="image/*">
+                <input type="submit" value="Upload Image">
+                <br>
+                <button type="submit" class="btn btn-success btn-block">Requesting Funding</button>
+            </form>
+        </section>
+
+        <section id="contact" class="text-center">
+            <h2>Contact Us</h2>
+            <p>Email: contact@doctorclinic.com</p>
+            <p>Phone: +1234567890</p>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
